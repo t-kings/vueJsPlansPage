@@ -1,0 +1,216 @@
+@media only screen and (max-width: 700px) {
+    nav{
+        padding: 20px;
+    }
+    
+    nav .logo{
+        width: 70px;
+    }
+    
+    nav ul li p {
+        font-size: 15px;
+    }
+    
+    nav li{
+        margin: 0 10px;
+    }
+
+    header{
+        background-position: center ;
+        background-size: 250px;
+    }
+    header div{
+        padding:40px 0 0 0;
+        width: 70%;
+        margin:auto;
+    }
+    
+    header div h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    header div p{
+    font-size: 15px;
+    text-align: center;
+    }
+    
+    .flexTable{
+        margin:-30vh 5vw 0 5vw;
+        border-radius: 35px;
+        padding: 0 0 20px 0;
+   }
+   .flexTable > div{
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .tableTop{
+        flex-flow: column nowrap !important;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+   .tableTop > div{
+    height:auto;
+    width:100% !important;
+    margin: 20px 0;
+}
+    .tableTop > div:hover{
+        transform: scale(1, 1);
+    }
+
+    .tableTop > div:nth-child(3){
+        transform: scale(1, 1);
+        border-radius: 25px;
+    }
+    
+    
+    .tableTop > div > h2{
+       font-size: 50px;
+       margin-bottom: 70px;
+    }
+    
+     .tableTop > div > div > h1{
+        font-size: 50px;
+        margin-bottom: 25px;
+     }
+    
+    .tableTop > div:first-child > div > h1{
+        font-size: 50px;
+        margin-bottom: 70px;
+     }
+    
+     .tableTop > div > div >  p{
+        font-size: 20px;
+        margin-bottom: 90px;
+     }
+
+     .tableTop > div a{
+        margin-bottom: 50px;
+     }
+
+     .tableTop img{
+         cursor: pointer;
+     }
+    
+     .flexTable  h2{
+         color:#656565;
+         font-size: 13px;
+     }
+    
+    .flexTable img{
+        width: 25px;
+    }
+    
+    .clear{
+        color:white;
+    }
+    
+    footer{
+        padding: 20px 5vw;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+    
+    footer img{
+        width:80px;
+    }
+    
+    footer ul{
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    
+    footer ul:nth-child(2) li a{
+        border-right: none;
+    }
+    
+    footer ul:last-child {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    
+    .no_display{
+        display: none !important;
+    }
+
+    .no_display_wide{
+        display: inline-block !important;
+    }
+
+    .plan_list{
+        background-color: white;
+        padding: 0 20px;
+        width: 100% !important;
+        display: none;
+    }
+
+    .plan_list > h2{
+        text-align: left ;
+        color:#656565 !important;
+        text-transform: capitalize !important;
+        font-weight: normal !important;
+    }
+
+    .plan_list > div {
+        display: flex ;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 20px 0;
+        text-align: left !important;
+    }
+
+    .plan_list div div {
+        width:50%;
+    }
+    
+    .plan_list div div:last-child {
+        text-align: center !important;
+    }
+
+    .plan_list_silver{
+        padding: 0 20px;
+        width: 100% !important;
+        display: none;
+    }
+
+    .plan_list_silver > h2{
+        text-align: left ;
+        color:white !important;
+        text-transform: capitalize !important;
+        font-weight: normal !important;
+    }
+
+    .plan_list_silver > div {
+        display: flex ;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 20px 0;
+        text-align: left !important;
+    }
+
+    .plan_list_silver > div div:first-child {
+        color:#F5F5F5;
+    }
+
+    .plan_list_silver div div {
+        width:50%;
+    }
+    
+    .plan_list_silver div div:last-child {
+        text-align: center !important;
+    }
+
+    .plan_list_silver .clear{
+        color: #0090E8 !important;
+    }
+    
+    
+  }
