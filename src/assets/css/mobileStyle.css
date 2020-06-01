@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     nav{
         padding: 20px;
     }
@@ -16,8 +16,8 @@
     }
 
     header{
-        background-position: center ;
-        background-size: 250px;
+        background-position: center bottom ;
+        background-size: 500px;
     }
     header div{
         padding:40px 0 0 0;
@@ -64,6 +64,7 @@
     .tableTop > div:nth-child(3){
         transform: scale(1, 1);
         border-radius: 25px;
+        padding-bottom: 0;
     }
     
     
@@ -93,6 +94,7 @@
 
      .tableTop img{
          cursor: pointer;
+         margin-bottom: 20px;
      }
     
      .flexTable  h2{
@@ -111,27 +113,30 @@
     footer{
         padding: 20px 5vw;
         flex-flow: column wrap;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 40px;
     }
     
     footer img{
         width:80px;
+        order:1;
     }
     
-    footer ul{
-        flex-flow: column wrap;
-        align-items: flex-start;
+    footer ul:nth-child(2){
+        flex-flow: row nowrap;
+        order:3;
     }
     
+
     footer ul:nth-child(2) li a{
-        border-right: none;
+        font-size: 10px;
     }
-    
+
     footer ul:last-child {
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: stretch;
+        order:2;
     }
 
     
@@ -148,7 +153,24 @@
         padding: 0 20px;
         width: 100% !important;
         display: none;
+        animation: show 0.5s linear;
     }
+
+    .opened{
+        display: block !important;
+    }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+      }
 
     .plan_list > h2{
         text-align: left ;
@@ -178,6 +200,7 @@
         padding: 0 20px;
         width: 100% !important;
         display: none;
+        animation: show 0.5s linear;
     }
 
     .plan_list_silver > h2{
@@ -211,6 +234,9 @@
     .plan_list_silver .clear{
         color: #0090E8 !important;
     }
-    
+
+    .pointer{
+        transform: rotate(180deg);
+    }
     
   }

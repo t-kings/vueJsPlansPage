@@ -14,8 +14,8 @@
                     </div>
                     <a href="#">Activate</a>
                     
-                    <img class="no_display_wide" src="./assets/images/angle-down.svg" alt="arrow" />
-                    <div class="plan_list">
+                    <img class=" no_display_wide" v-on:click="opened_bronze = !opened_bronze" v-bind:class="{pointer:opened_bronze}"  src="./assets/images/angle-down.svg" alt="arrow" />
+                    <div class="plan_list" v-bind:class="{opened:opened_bronze}">
                         <h2>
                             <h1>Plan <br />Features</h1>
                         </h2>
@@ -34,8 +34,8 @@
                     </div>
                     <a href="#">Activate</a>
 
-                    <img class="no_display_wide" src="./assets/images/angle-down (1).svg" alt="arrow" />
-                    <div class="plan_list_silver">
+                    <img class=" no_display_wide" v-on:click="opened_silver = !opened_silver" v-bind:class="{pointer:opened_silver}" src="./assets/images/angle-down (1).svg" alt="arrow" />
+                    <div class="plan_list" v-bind:class="{opened:opened_silver}">
                         <h2>
                             <h1>Plan <br />Features</h1>
                         </h2>
@@ -53,8 +53,8 @@
                         <p>Per month</p>
                     </div>
                     <a href="#">Activate</a>
-                    <img class="no_display_wide" src="./assets/images/angle-down (2).svg" alt="arrow" />
-                    <div class="plan_list">
+                    <img class="no_display_wide" v-on:click="opened = !opened" src="./assets/images/angle-down (2).svg" alt="arrow" v-bind:class="{pointer:opened}" />
+                    <div class="plan_list" v-bind:class="{opened:opened}">
                         <h2>
                             <h1>Plan <br />Features</h1>
                         </h2>
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <div  class="no_display" v-for="plan in plans">
+            <div  class="no_display" div v-for="plan in plans">
                 <div>
                     {{plan.plan}}
                 </div>
@@ -109,7 +109,10 @@ export default {
           {plan:'Start Up', bronze:'<p class="clear"> . </p>', silver:'<p class="clear"> . </p>', gold:'<img src="./src/assets/images/check (1).svg" alt="check"/>'},
           {plan:'GIve a Medal', bronze:'<img src="./src/assets/images/check (2).svg" alt="check"/>', silver:'<img src="./src/assets/images/check.svg" alt="check"/>', gold:'<img src="./src/assets/images/check (1).svg" alt="check"/>'},
           {plan:'Cargo', bronze:'<img src="./src/assets/images/check (2).svg" alt="check"/>', silver:'<img src="./src/assets/images/check.svg" alt="check"/>', gold:'<img src="./src/assets/images/check (1).svg" alt="check"/>'},
-      ]
+      ],
+      opened:false,
+      opened_silver:false,
+      opened_bronze:false
     }
   }
 }
